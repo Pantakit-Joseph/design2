@@ -1,0 +1,206 @@
+:root {
+    --main: hsl(216, 82%, 47%);
+    --blue: hsl(216, 82%, 47%);
+    --green: hsl(128, 53%, 44%);
+    --violet: hsl(246, 87%, 65%);
+    --red: hsl(9, 79%, 54%);
+    --orange: hsl(37, 92%, 57%);
+    --yellow: hsl(44, 94%, 66%);
+    --grey-50: hsl(0, 0%, 74%);
+    --grey: hsl(0, 0%, 50%);
+    --border-color: hsl(0, 3%, 80%);
+    --bg-base: #fbfbfb;
+    --bg-main: #fff;
+    --text-color: hsl(225, 3%, 25%);
+    --text-grey: hsl(225, 3%, 63%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-base);
+    color: var(--text-color);
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+input:not(input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input[type="checkbox"],
+    input[type="radio"]),
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-main);
+    outline: none;
+    border: .1rem solid var(--border-color);
+    border-radius: 0.25rem;
+}
+
+input:not(input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input[type="checkbox"],
+    input[type="radio"]):focus,
+textarea:focus,
+select:focus {
+    border-color: var(--main);
+    outline: none;
+}
+
+label {
+    font-size: .875rem;
+}
+
+input[type="checkbox"]~label,
+input[type="radio"]~label {
+    font-size: 1rem;
+}
+
+.card {
+    border: .1rem solid var(--border-color);
+    border-radius: 0.25rem;
+    background: var(--bg-main);
+    display: block;
+}
+
+.card-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1rem solid var(--border-color);
+}
+
+.card-title {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.card-header .card-title {
+    margin: 0;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.25rem;
+    object-fit: cover;
+}
+
+.btn {
+    --bg-btn: #fff;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    transition: 0.2s;
+    border: .1rem solid var(--border-color);
+    border-radius: 0.25rem;
+    background: var(--bg-btn);
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:disabled {
+    opacity: 0.6;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+
+
+.btn-blue {
+    --border-color: var(--blue);
+    --bg-btn: var(--blue);
+    --text-color: #ffffff;
+}
+
+.btn-green {
+    --border-color: var(--green);
+    --bg-btn: var(--green);
+    --text-color: #ffffff;
+}
+
+.btn-red {
+    --border-color: var(--red);
+    --bg-btn: var(--red);
+    --text-color: #ffffff;
+}
+
+.btn-orange {
+    --border-color: var(--orange);
+    --bg-btn: var(--orange);
+    --text-color: #ffffff;
+}
+
+.btn-grey {
+    --border-color: var(--grey);
+    --bg-btn: var(--grey);
+    --text-color: #ffffff;
+}
+
+table {
+    border-spacing: 0;
+    display: block;
+    overflow-x: auto;
+    text-align: left;
+    width: 100%;
+}
+
+td,
+th {
+    border-bottom: 0.1rem solid var(--border-color);
+    padding: 1.2rem 1.5rem;
+}
+
+.alert {
+    --alert-bg: var(--bg-main);
+    --alert-border: var(--border-color);
+    --alert-color: var(--text-color);
+    padding: 1rem;
+    display: block;
+    border: .1rem solid var(--alert-border);
+    border-radius: .25rem;
+    color: var(--alert-color);
+    background-color: var(--alert-bg);
+}
+
+.alert-red {
+    --alert-border: var(--red);
+    --alert-color: hsl(9, 79%, 30%);
+    --alert-bg: hsl(9, 79%, 90%);
+}
+
+.alert-green {
+    --alert-border: var(--green);
+    --alert-color: hsl(128, 53%, 30%);
+    --alert-bg: hsl(128, 53%, 90%);
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 100%;
+}
