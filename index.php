@@ -25,8 +25,8 @@ $pageName = $pageName ?? 'Dashboard';
                 <a href="<?= SITE_URL ?>" class="menu-item <?= $pageName === 'Dashboard' ? 'active' : '' ?>">Dashboard</a>
 
                 <span class="menu-title">PAGE</span>
-                <a href="" class="menu-item">Register</a>
-                <a href="" class="menu-item">Login</a>
+                <a href="<?= SITE_URL ?>pages/sign-up.php" class="menu-item">Register</a>
+                <a href="<?= SITE_URL ?>pages/sign-in.php" class="menu-item">Login</a>
 
                 <span class="menu-title">Components</span>
                 <a class="menu-item <?= $pageName === 'Card' ? 'active' : '' ?>" href="<?= SITE_URL. '/components/card.php' ?>">
