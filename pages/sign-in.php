@@ -11,8 +11,9 @@ require_once '../bootstrap.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ออกแบบระบบ</title>
 
-    <link rel="stylesheet" href="<?= BASE_URL ?>style.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>utility.css">
+    <link rel="stylesheet" href="<?= SITE_URL ?>/style.css">
+    <link rel="stylesheet" href="<?= SITE_URL ?>/utility.css">
+    <link rel="stylesheet" href="<?= SITE_URL ?>/auth.css">
 </head>
 
 <body class="scroll">
@@ -33,7 +34,7 @@ require_once '../bootstrap.php';
             </div>
         </div>
         <div class="text-grey pt-3 text-c">
-            ยังไม่มีบัญชี? <a href="<?= BASE_URL ?>pages/sign-up.php">สร้างบัญชี</a>
+            ยังไม่มีบัญชี? <a href="<?= SITE_URL ?>/pages/sign-up.php">สร้างบัญชี</a>
         </div>
     </div>
 </body>
